@@ -6,5 +6,12 @@ class Phone {
         this.number = number;
         this.isOn = false;
     }
+    // methods
+    togglePower() {
+        this.isOn = !this.isOn;
+    }
+    makeCall(person) {
+        return `Hello, ${person}, how are you?`;
+    }
 }
 exports.Phone = Phone;
